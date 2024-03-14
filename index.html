@@ -2,14 +2,14 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>21번 버스</title>
-    <link rel="shortcut icon" href="Icon.png">
+    <link rel="shortcut icon" href="icon.png">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=900 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/21번 버스.loader.js";
+      var loaderUrl = buildUrl + "/StreamingAssets.loader.js";
       var config = {
-        dataUrl: buildUrl + "/21번 버스.data.br",
-        frameworkUrl: buildUrl + "/21번 버스.framework.js.br",
-        codeUrl: buildUrl + "/21번 버스.wasm.br",
+        dataUrl: buildUrl + "/StreamingAssets.data.unityweb",
+        frameworkUrl: buildUrl + "/StreamingAssets.framework.js.unityweb",
+        codeUrl: buildUrl + "/StreamingAssets.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "web21bus",
@@ -94,7 +94,7 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
+        canvas.style.width = "900px";
         canvas.style.height = "600px";
       }
 
